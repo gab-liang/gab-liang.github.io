@@ -2,8 +2,83 @@
 <search>
   <entry>
     <title></title>
-    <url>/2024/12/29/1234/</url>
+    <url>/2025/01/02/1234/</url>
     <content><![CDATA[<h1 id="1234"><a href="#1234" class="headerlink" title="1234"></a>1234</h1><p>大苏打撒</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<h1 id="1-三相交流电路"><a href="#1-三相交流电路" class="headerlink" title="1 三相交流电路"></a>1 三相交流电路</h1><h2 id="1-1-三相电源的连接"><a href="#1-1-三相电源的连接" class="headerlink" title="1.1 三相电源的连接"></a>1.1 三相电源的连接</h2><h3 id="1-1-1-星形连接"><a href="#1-1-1-星形连接" class="headerlink" title="1.1.1 星形连接"></a>1.1.1 星形连接</h3><ol>
+<li><ol>
+<li><p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090752191.png" alt="image2023-8-23_16-17-55"></p>
+</li>
+<li><p>O点为<strong>中性点</strong>，其引出的导线为<strong>中线（零线）</strong></p>
+<p>首端A、B、C引出的导线为<strong>相线（火线）</strong></p>
+</li>
+<li><p>相线与中线间的电压为<strong>相电压</strong></p>
+<p>任意两相线间的电压为<strong>线电压</strong></p>
+</li>
+<li><p>线电压超前于其所对应的相电压30°（如图b），<strong>数值为其√3倍</strong>，如UAB&#x3D;√3*UA</p>
+</li>
+<li><p>接法的特点是：<strong>电源向负荷提供两种电压（相电压和线电压）</strong>，即平常低压系统中的220V和380V</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="1-1-2-三角形连接"><a href="#1-1-2-三角形连接" class="headerlink" title="1.1.2 三角形连接"></a>1.1.2 三角形连接</h3><ol>
+<li><ol>
+<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090845645.png" alt="image2023-8-23_16-54-37"></li>
+<li>必须使<strong>闭合回路总电动势之和为零</strong></li>
+<li><strong>若有一根头尾接错，那么总电动势为某一相的2倍，致使电源烧毁</strong></li>
+<li>接法的特点：<strong>线电压等于相电压，电源只输出一种电压</strong></li>
+</ol>
+</li>
+</ol>
+<h2 id="1-2-三相负载的连接"><a href="#1-2-三相负载的连接" class="headerlink" title="1.2 三相负载的连接"></a>1.2 三相负载的连接</h2><h3 id="1-2-1-星形接法"><a href="#1-2-1-星形接法" class="headerlink" title="1.2.1 星形接法"></a>1.2.1 星形接法</h3><p>定义：三组负载的一端接到三相电源的相线上，另一端一并接到中线上</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090903838.png" alt="image2023-8-23_17-41-19"></p>
+<ol>
+<li><ol>
+<li>流经各相负载的电流为<strong>负载的相电流&#x3D;负载的线电流</strong></li>
+<li>流过中线的电流为<strong>中线电流</strong></li>
+<li><strong>中线电流&#x3D;各相负载电流的相量之和</strong></li>
+<li>中线作为三相电流的公共回路，一般中线电流小于线电流，因此中线导线的截面积一般可比相线导线的截面积小一点</li>
+<li>三相三线制供电：当三相负载阻抗的大小和性质相同时，三相负载对称平衡，则中线电流为零，可省去中线</li>
+<li>三相四线制供电：<strong>三相负载不平衡，中线不允许断开</strong>，否则负荷大的一端相电压小，负荷小的一端相电压大，会烧坏电器，因此<strong>中线干线上不能安装熔断器或开关设备</strong>，并需要选用机械强度高的线材</li>
+</ol>
+</li>
+</ol>
+<h3 id="1-2-2-三角形接法（三相负载必须平衡）"><a href="#1-2-2-三角形接法（三相负载必须平衡）" class="headerlink" title="1.2.2 三角形接法（三相负载必须平衡）"></a>1.2.2 三角形接法（<strong>三相负载必须平衡</strong>）</h3><ol>
+<li><ol>
+<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090933415.png" alt="image2023-9-4_14-28-6"></li>
+<li>负荷两端的电压称为<strong>相电压</strong>，且<strong>负荷的相电压等于电源的线电压</strong></li>
+</ol>
+</li>
+</ol>
+<h3 id="1-2-3-对于380V-220V的三相四线制低压供电系统"><a href="#1-2-3-对于380V-220V的三相四线制低压供电系统" class="headerlink" title="1.2.3 对于380V&#x2F;220V的三相四线制低压供电系统"></a>1.2.3 对于380V&#x2F;220V的三相四线制低压供电系统</h3><ol>
+<li><ol>
+<li>单相负载的额定电压为220V：接在电源的端线和中线之间</li>
+<li>单相负载的额定电压为380V：接在电源的端线和端线之间</li>
+<li>三相对称负载的额定电压为220V：星形接法</li>
+<li>三相对称负载的额定电压为380V：三角形接法</li>
+</ol>
+</li>
+</ol>
+<h1 id="2-晶体三极管"><a href="#2-晶体三极管" class="headerlink" title="2 晶体三极管"></a>2 晶体三极管</h1><h2 id="2-1-结构及工作原理"><a href="#2-1-结构及工作原理" class="headerlink" title="2.1 结构及工作原理"></a>2.1 结构及工作原理</h2><h3 id="2-1-1定义"><a href="#2-1-1定义" class="headerlink" title="2.1.1定义"></a>2.1.1定义</h3><ol>
+<li><ol>
+<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091050000.png" alt="image2023-9-4_15-35-31"></li>
+<li><strong>基极b，发射极e，集电极c</strong></li>
+</ol>
+</li>
+</ol>
+<h3 id="2-1-2-工作原理"><a href="#2-1-2-工作原理" class="headerlink" title="2.1.2 工作原理"></a>2.1.2 工作原理</h3><ol>
+<li><ol>
+<li>共发射极电路（如图，应用最广泛，除此以外还有共集电极电路和共基极电路）<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091118545.png" alt="image2023-9-4_15-39-6"></li>
+<li>始终满足<strong>Ie&#x3D;Ic+Ib</strong></li>
+<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091132686.png" alt="image2023-9-4_15-42-43"><br><strong>基极对集电极有控制及电流放大作用：</strong>基极电流Ib的微小变化，可以引起集电极电流Ic的较大变化</li>
+</ol>
+</li>
+</ol>
 ]]></content>
   </entry>
 </search>
