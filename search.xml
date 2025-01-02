@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2025/01/02/1234/</url>
+    <title>testing</title>
+    <url>/2025/01/01/1234/</url>
     <content><![CDATA[<h1 id="1234"><a href="#1234" class="headerlink" title="1234"></a>1234</h1><p>大苏打撒</p>
 ]]></content>
+      <tags>
+        <tag>无</tag>
+      </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>categories</title>
     <url>/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/</url>
     <content><![CDATA[<h1 id="1-三相交流电路"><a href="#1-三相交流电路" class="headerlink" title="1 三相交流电路"></a>1 三相交流电路</h1><h2 id="1-1-三相电源的连接"><a href="#1-1-三相电源的连接" class="headerlink" title="1.1 三相电源的连接"></a>1.1 三相电源的连接</h2><h3 id="1-1-1-星形连接"><a href="#1-1-1-星形连接" class="headerlink" title="1.1.1 星形连接"></a>1.1.1 星形连接</h3><ol>
 <li><ol>
@@ -80,5 +83,8 @@
 </li>
 </ol>
 ]]></content>
+      <tags>
+        <tag>低压电工</tag>
+      </tags>
   </entry>
 </search>
