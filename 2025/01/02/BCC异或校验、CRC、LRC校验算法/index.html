@@ -20,35 +20,36 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="1 三相交流电路1.1 三相电源的连接1.1.1 星形连接    O点为中性点，其引出的导线为中线（零线） 首端A、B、C引出的导线为相线（火线）  相线与中线间的电压为相电压 任意两相线间的电压为线电压  线电压超前于其所对应的相电压30°（如图b），数值为其√3倍，如UAB&#x3D;√3*UA  接法的特点是：电源向负荷提供两种电压（相电压和线电压），即平常低压系统中的220V和380V">
+    <meta name="description" content="备注-Codesys—标准Modbus串口通讯库的应用示例：https:&#x2F;&#x2F;blog.csdn.net&#x2F;wushangwei2019&#x2F;article&#x2F;details&#x2F;136202630 七种常见逻辑门 与门（AND） 或门(OR) 非门（NOT） 与非门（NAND) 或非门(NOR) 异或门(XOR)：输入相同时输出为低，否则为高。同为0异为1 同或门(XNOR)：与异或门相反。输入相同时输出为高">
 <meta property="og:type" content="article">
-<meta property="og:title" content="三相交流电路">
-<meta property="og:url" content="http://example.com/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/index.html">
+<meta property="og:title" content="BCC异或校验、CRC、LRC校验算法">
+<meta property="og:url" content="http://example.com/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="My blog">
-<meta property="og:description" content="1 三相交流电路1.1 三相电源的连接1.1.1 星形连接    O点为中性点，其引出的导线为中线（零线） 首端A、B、C引出的导线为相线（火线）  相线与中线间的电压为相电压 任意两相线间的电压为线电压  线电压超前于其所对应的相电压30°（如图b），数值为其√3倍，如UAB&#x3D;√3*UA  接法的特点是：电源向负荷提供两种电压（相电压和线电压），即平常低压系统中的220V和380V">
+<meta property="og:description" content="备注-Codesys—标准Modbus串口通讯库的应用示例：https:&#x2F;&#x2F;blog.csdn.net&#x2F;wushangwei2019&#x2F;article&#x2F;details&#x2F;136202630 七种常见逻辑门 与门（AND） 或门(OR) 非门（NOT） 与非门（NAND) 或非门(NOR) 异或门(XOR)：输入相同时输出为低，否则为高。同为0异为1 同或门(XNOR)：与异或门相反。输入相同时输出为高">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090752191.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090845645.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090903838.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090933415.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091050000.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091118545.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091132686.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094650978.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094717003.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094758817.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094835412.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094857707.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094912402.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094927585.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102101431741.png">
 <meta property="article:published_time" content="2025-01-02T09:19:14.000Z">
 <meta property="article:modified_time" content="2025-01-03T01:40:36.424Z">
 <meta property="article:author" content="Gab Liang">
-<meta property="article:tag" content="低压电工">
+<meta property="article:tag" content="校验算法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090752191.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094650978.png">
 
 
-<link rel="canonical" href="http://example.com/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/">
+<link rel="canonical" href="http://example.com/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/","path":"2025/01/02/低压电工作业/","title":"三相交流电路"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/","path":"2025/01/02/BCC异或校验、CRC、LRC校验算法/","title":"BCC异或校验、CRC、LRC校验算法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>三相交流电路 | My blog</title>
+<title>BCC异或校验、CRC、LRC校验算法 | My blog</title>
   
 
 
@@ -148,7 +149,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%B8%89%E7%9B%B8%E4%BA%A4%E6%B5%81%E7%94%B5%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">1 三相交流电路</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E4%B8%89%E7%9B%B8%E7%94%B5%E6%BA%90%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 三相电源的连接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-%E6%98%9F%E5%BD%A2%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1 星形连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2-%E4%B8%89%E8%A7%92%E5%BD%A2%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2 三角形连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E4%B8%89%E7%9B%B8%E8%B4%9F%E8%BD%BD%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 三相负载的连接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-%E6%98%9F%E5%BD%A2%E6%8E%A5%E6%B3%95"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1 星形接法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2-%E4%B8%89%E8%A7%92%E5%BD%A2%E6%8E%A5%E6%B3%95%EF%BC%88%E4%B8%89%E7%9B%B8%E8%B4%9F%E8%BD%BD%E5%BF%85%E9%A1%BB%E5%B9%B3%E8%A1%A1%EF%BC%89"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2.2 三角形接法（三相负载必须平衡）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-3-%E5%AF%B9%E4%BA%8E380V-220V%E7%9A%84%E4%B8%89%E7%9B%B8%E5%9B%9B%E7%BA%BF%E5%88%B6%E4%BD%8E%E5%8E%8B%E4%BE%9B%E7%94%B5%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.2.3 对于380V&#x2F;220V的三相四线制低压供电系统</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E6%99%B6%E4%BD%93%E4%B8%89%E6%9E%81%E7%AE%A1"><span class="nav-number">2.</span> <span class="nav-text">2 晶体三极管</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E7%BB%93%E6%9E%84%E5%8F%8A%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 结构及工作原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1%E5%AE%9A%E4%B9%89"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.1.2 工作原理</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%83%E7%A7%8D%E5%B8%B8%E8%A7%81%E9%80%BB%E8%BE%91%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">七种常见逻辑门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BCC-Block-Check-Character-%E4%BF%A1%E6%81%AF%E7%BB%84%E6%A0%A1%E9%AA%8C%E7%A0%81-%EF%BC%8C%E4%B9%9F%E6%98%AF%E5%B8%B8%E8%AF%B4%E7%9A%84%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">BCC(Block Check Character&#x2F;信息组校验码)，也是常说的异或校验方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CRC-Cyclic-Redundancy-Check-%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99%E6%A0%A1%E9%AA%8C"><span class="nav-number">3.</span> <span class="nav-text">CRC(Cyclic Redundancy Check&#x2F;循环冗余校验)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LRC-Longitudinal-Redundancy-Check-%E7%BA%B5%E5%90%91%E5%86%97%E4%BD%99%E6%A0%A1%E9%AA%8C"><span class="nav-number">4.</span> <span class="nav-text">LRC(Longitudinal Redundancy Check&#x2F;纵向冗余校验)</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -211,7 +212,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20241225140413310.png">
@@ -224,12 +225,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="三相交流电路 | My blog">
+      <meta itemprop="name" content="BCC异或校验、CRC、LRC校验算法 | My blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          三相交流电路
+          BCC异或校验、CRC、LRC校验算法
         </h1>
 
         <div class="post-meta-container">
@@ -255,7 +256,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5/" itemprop="url" rel="index"><span itemprop="name">低压电工</span></a>
+          <a href="/categories/%E9%80%9A%E8%AE%AF%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">通讯相关</span></a>
         </span>
     </span>
 
@@ -268,75 +269,61 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="1-三相交流电路"><a href="#1-三相交流电路" class="headerlink" title="1 三相交流电路"></a>1 三相交流电路</h1><h2 id="1-1-三相电源的连接"><a href="#1-1-三相电源的连接" class="headerlink" title="1.1 三相电源的连接"></a>1.1 三相电源的连接</h2><h3 id="1-1-1-星形连接"><a href="#1-1-1-星形连接" class="headerlink" title="1.1.1 星形连接"></a>1.1.1 星形连接</h3><ol>
-<li><ol>
-<li><p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090752191.png" alt="image2023-8-23_16-17-55"></p>
+    <div class="post-body" itemprop="articleBody"><p>备注-Codesys—标准Modbus串口通讯库的应用示例：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wushangwei2019/article/details/136202630">https://blog.csdn.net/wushangwei2019/article/details/136202630</a></p>
+<h3 id="七种常见逻辑门"><a href="#七种常见逻辑门" class="headerlink" title="七种常见逻辑门"></a>七种常见逻辑门</h3><ol>
+<li>与门（AND）</li>
+<li>或门(OR)</li>
+<li>非门（NOT）</li>
+<li>与非门（NAND)</li>
+<li>或非门(NOR)</li>
+<li>异或门(XOR)：输入相同时输出为低，否则为高。同为0异为1</li>
+<li>同或门(XNOR)：与异或门相反。输入相同时输出为高，否则为低。同为1异为0</li>
+</ol>
+<h3 id="BCC-Block-Check-Character-信息组校验码-，也是常说的异或校验方法"><a href="#BCC-Block-Check-Character-信息组校验码-，也是常说的异或校验方法" class="headerlink" title="BCC(Block Check Character&#x2F;信息组校验码)，也是常说的异或校验方法"></a>BCC(Block Check Character&#x2F;信息组校验码)，也是常说的异或校验方法</h3><ol>
+<li><p>BCC校验在线计算工具：<a target="_blank" rel="noopener" href="https://www.ip33.com/bcc.html">https://www.ip33.com/bcc.html</a></p>
 </li>
-<li><p>O点为<strong>中性点</strong>，其引出的导线为<strong>中线（零线）</strong></p>
-<p>首端A、B、C引出的导线为<strong>相线（火线）</strong></p>
+<li><p>具体算法是：将每一个字节的数据（一般是每两个16进制的字符）进行异或后即得到校验码。</p>
 </li>
-<li><p>相线与中线间的电压为<strong>相电压</strong></p>
-<p>任意两相线间的电压为<strong>线电压</strong></p>
-</li>
-<li><p>线电压超前于其所对应的相电压30°（如图b），<strong>数值为其√3倍</strong>，如UAB&#x3D;√3*UA</p>
-</li>
-<li><p>接法的特点是：<strong>电源向负荷提供两种电压（相电压和线电压）</strong>，即平常低压系统中的220V和380V</p>
+<li><p>例如：需要异或校验的16进制数据：<strong>01 A0 7C FF 02——&#x3D;20</strong>，最后与BCC校验位进行对比，相同就说明数据传递的正确性和可靠性。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094650978.png" alt="image2024-2-22_11-34-41"></p>
 </li>
 </ol>
-</li>
-</ol>
-<h3 id="1-1-2-三角形连接"><a href="#1-1-2-三角形连接" class="headerlink" title="1.1.2 三角形连接"></a>1.1.2 三角形连接</h3><ol>
-<li><ol>
-<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090845645.png" alt="image2023-8-23_16-54-37"></li>
-<li>必须使<strong>闭合回路总电动势之和为零</strong></li>
-<li><strong>若有一根头尾接错，那么总电动势为某一相的2倍，致使电源烧毁</strong></li>
-<li>接法的特点：<strong>线电压等于相电压，电源只输出一种电压</strong></li>
-</ol>
-</li>
-</ol>
-<h2 id="1-2-三相负载的连接"><a href="#1-2-三相负载的连接" class="headerlink" title="1.2 三相负载的连接"></a>1.2 三相负载的连接</h2><h3 id="1-2-1-星形接法"><a href="#1-2-1-星形接法" class="headerlink" title="1.2.1 星形接法"></a>1.2.1 星形接法</h3><p>定义：三组负载的一端接到三相电源的相线上，另一端一并接到中线上</p>
-<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090903838.png" alt="image2023-8-23_17-41-19"></p>
-<ol>
-<li><ol>
-<li>流经各相负载的电流为<strong>负载的相电流&#x3D;负载的线电流</strong></li>
-<li>流过中线的电流为<strong>中线电流</strong></li>
-<li><strong>中线电流&#x3D;各相负载电流的相量之和</strong></li>
-<li>中线作为三相电流的公共回路，一般中线电流小于线电流，因此中线导线的截面积一般可比相线导线的截面积小一点</li>
-<li>三相三线制供电：当三相负载阻抗的大小和性质相同时，三相负载对称平衡，则中线电流为零，可省去中线</li>
-<li>三相四线制供电：<strong>三相负载不平衡，中线不允许断开</strong>，否则负荷大的一端相电压小，负荷小的一端相电压大，会烧坏电器，因此<strong>中线干线上不能安装熔断器或开关设备</strong>，并需要选用机械强度高的线材</li>
+<h3 id="CRC-Cyclic-Redundancy-Check-循环冗余校验"><a href="#CRC-Cyclic-Redundancy-Check-循环冗余校验" class="headerlink" title="CRC(Cyclic Redundancy Check&#x2F;循环冗余校验)"></a>CRC(Cyclic Redundancy Check&#x2F;循环冗余校验)</h3><ol>
+<li>参考文章：<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/CRC.html">https://info.support.huawei.com/info-finder/encyclopedia/zh/CRC.html</a></li>
+<li>CRC校验在线计算工具：<a target="_blank" rel="noopener" href="https://www.lddgo.net/encrypt/crc">https://www.lddgo.net/encrypt/crc</a></li>
+<li>CRC的思想就是先在要发送的K比特长度的数据后面附加一个R比特长度的校验码，然后生成一个新帧发送给接收端。接收端接收到新帧后，根据收到的数据和校验码来验证接收到的数据是否正确。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094717003.png" alt="image2024-2-22_13-58-26"></li>
+<li>算法如下：<ol>
+<li>发送端、接收端在通信前，<strong>约定好除数P</strong>，也就是下面多项式的系数。P应该是R+1位长度；</li>
+<li>发送端首先在原来的K位数据后面加R个0，相当于原来的数据左移了R位；</li>
+<li>然后进行模2除法运算（其实就是异或XOR运算），将加0之后的K+R位的数除以P，循环计算，直到余数的阶数小于R，<strong>这个余数就是附加的校验码（即校验码R）</strong>，如果长度不足R位需要在前面加0补齐；</li>
+<li>发送端将R位校验码附加在原数据后面发送给接收方；</li>
+<li>接收方接收到数据后，将数据以模2除法方式除以除数P。如果没有余数，说明在传输过程中没有出现错误，否则说明有错误。</li>
+<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094758817.png" alt="image2024-2-22_13-56-53"></li>
 </ol>
 </li>
-</ol>
-<h3 id="1-2-2-三角形接法（三相负载必须平衡）"><a href="#1-2-2-三角形接法（三相负载必须平衡）" class="headerlink" title="1.2.2 三角形接法（三相负载必须平衡）"></a>1.2.2 三角形接法（<strong>三相负载必须平衡</strong>）</h3><ol>
-<li><ol>
-<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102090933415.png" alt="image2023-9-4_14-28-6"></li>
-<li>负荷两端的电压称为<strong>相电压</strong>，且<strong>负荷的相电压等于电源的线电压</strong></li>
+<li>以多项式为CRC-4&#x3D;X^4+X+1为例：<ol>
+<li>此时除数P&#x3D;10011，我们假设源数据K为10110011。</li>
+<li>在发送端将K左移4位，然后除以P。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094835412.png" alt="image2024-2-22_14-7-2"></li>
+<li>计算得到的余数就是<strong>0100</strong>，也就是CRC校验码R。将<strong>0100</strong>附加到原始数据帧10110011后，组成新帧10110011<strong>0100</strong>发送给接收端。</li>
+<li>接收端接收到该帧后，会用该帧去除以上面选定的除数P，验证余数是否为0，如果为0，则表示数据在传输过程中没有出现差错。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094857707.png" alt="image2024-2-22_14-6-41"></li>
 </ol>
 </li>
 </ol>
-<h3 id="1-2-3-对于380V-220V的三相四线制低压供电系统"><a href="#1-2-3-对于380V-220V的三相四线制低压供电系统" class="headerlink" title="1.2.3 对于380V&#x2F;220V的三相四线制低压供电系统"></a>1.2.3 对于380V&#x2F;220V的三相四线制低压供电系统</h3><ol>
-<li><ol>
-<li>单相负载的额定电压为220V：接在电源的端线和中线之间</li>
-<li>单相负载的额定电压为380V：接在电源的端线和端线之间</li>
-<li>三相对称负载的额定电压为220V：星形接法</li>
-<li>三相对称负载的额定电压为380V：三角形接法</li>
+<h3 id="LRC-Longitudinal-Redundancy-Check-纵向冗余校验"><a href="#LRC-Longitudinal-Redundancy-Check-纵向冗余校验" class="headerlink" title="LRC(Longitudinal Redundancy Check&#x2F;纵向冗余校验)"></a>LRC(Longitudinal Redundancy Check&#x2F;纵向冗余校验)</h3><ol>
+<li>前言：奇偶校验<ol>
+<li>奇偶校验是检测错误的最古老的方法。用于检查数据传输的完整性。校验方法非常简单，只需要在数据上添加一个额外的位， 这个额外的位称为奇偶校验位。 该位简单地表示原数据中 1 的数量是奇数还是偶数。</li>
+<li>基本算法如下：<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094912402.png" alt="image2024-2-22_14-50-46"></li>
+<li>通常，如果 1 的数量是奇数，则奇偶校验位是 1，如果 1 的数量是偶数，则奇偶校验位是 0。</li>
+<li>虽然奇偶校验足以保护单个字符或字节，但当应用于较大的消息时，其检测能力不足：消息通常跨越数千位，如果仅翻转两位，就无法检测到损坏。消息中出现多位错误的几率随着消息长度呈指数级增加。<ol>
+<li>当一个字符中有 1 个位不正确时（如上面的 Single-bit error），它可以检测错误，但是当字符中有 2 个错误时，它认为没有发生错误。</li>
+<li>奇偶校验会消耗大量开销（通常每 8 个位就添加一个校验位），因此它会减慢传输速度。</li>
 </ol>
 </li>
 </ol>
-<h1 id="2-晶体三极管"><a href="#2-晶体三极管" class="headerlink" title="2 晶体三极管"></a>2 晶体三极管</h1><h2 id="2-1-结构及工作原理"><a href="#2-1-结构及工作原理" class="headerlink" title="2.1 结构及工作原理"></a>2.1 结构及工作原理</h2><h3 id="2-1-1定义"><a href="#2-1-1定义" class="headerlink" title="2.1.1定义"></a>2.1.1定义</h3><ol>
-<li><ol>
-<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091050000.png" alt="image2023-9-4_15-35-31"></li>
-<li><strong>基极b，发射极e，集电极c</strong></li>
-</ol>
 </li>
-</ol>
-<h3 id="2-1-2-工作原理"><a href="#2-1-2-工作原理" class="headerlink" title="2.1.2 工作原理"></a>2.1.2 工作原理</h3><ol>
-<li><ol>
-<li>共发射极电路（如图，应用最广泛，除此以外还有共集电极电路和共基极电路）<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091118545.png" alt="image2023-9-4_15-39-6"></li>
-<li>始终满足<strong>Ie&#x3D;Ic+Ib</strong></li>
-<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102091132686.png" alt="image2023-9-4_15-42-43"><br><strong>基极对集电极有控制及电流放大作用：</strong>基极电流Ib的微小变化，可以引起集电极电流Ic的较大变化</li>
-</ol>
-</li>
+<li>纵向冗余校验是一个逐字节奇偶校验计算，将数据字的所有字节一起<strong>异或</strong>，创建一个字节的结果，也称为 XOR 校验和。</li>
+<li>算法如下：<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094927585.png" alt="image2024-2-22_14-55-2"></li>
+<li>纵向冗余校验就是对奇偶校验的扩展形式，其只能检测纵向奇数个错误。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102101431741.png" alt="image2024-2-22_14-56-25"></li>
 </ol>
 
     </div>
@@ -347,18 +334,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5/" rel="tag"># 低压电工</a>
+              <a href="/tags/%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/" rel="tag"># 校验算法</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/" rel="prev" title="三相交流电路">
+                  <i class="fa fa-angle-left"></i> 三相交流电路
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/" rel="next" title="BCC异或校验、CRC、LRC校验算法">
-                  BCC异或校验、CRC、LRC校验算法 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>

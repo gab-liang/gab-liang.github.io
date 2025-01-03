@@ -155,6 +155,11 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
         <span class="site-state-item-count">2</span>
@@ -191,6 +196,146 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20241225140413310.png">
+      <meta itemprop="name" content="Gab Liang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | My blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/01/02/BCC%E5%BC%82%E6%88%96%E6%A0%A1%E9%AA%8C%E3%80%81CRC%E3%80%81LRC%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">BCC异或校验、CRC、LRC校验算法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-01-02 09:19:14" itemprop="dateCreated datePublished" datetime="2025-01-02T09:19:14+00:00">2025-01-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-03 01:40:36" itemprop="dateModified" datetime="2025-01-03T01:40:36+00:00">2025-01-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%80%9A%E8%AE%AF%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">通讯相关</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>备注-Codesys—标准Modbus串口通讯库的应用示例：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wushangwei2019/article/details/136202630">https://blog.csdn.net/wushangwei2019/article/details/136202630</a></p>
+<h3 id="七种常见逻辑门"><a href="#七种常见逻辑门" class="headerlink" title="七种常见逻辑门"></a>七种常见逻辑门</h3><ol>
+<li>与门（AND）</li>
+<li>或门(OR)</li>
+<li>非门（NOT）</li>
+<li>与非门（NAND)</li>
+<li>或非门(NOR)</li>
+<li>异或门(XOR)：输入相同时输出为低，否则为高。同为0异为1</li>
+<li>同或门(XNOR)：与异或门相反。输入相同时输出为高，否则为低。同为1异为0</li>
+</ol>
+<h3 id="BCC-Block-Check-Character-信息组校验码-，也是常说的异或校验方法"><a href="#BCC-Block-Check-Character-信息组校验码-，也是常说的异或校验方法" class="headerlink" title="BCC(Block Check Character&#x2F;信息组校验码)，也是常说的异或校验方法"></a>BCC(Block Check Character&#x2F;信息组校验码)，也是常说的异或校验方法</h3><ol>
+<li><p>BCC校验在线计算工具：<a target="_blank" rel="noopener" href="https://www.ip33.com/bcc.html">https://www.ip33.com/bcc.html</a></p>
+</li>
+<li><p>具体算法是：将每一个字节的数据（一般是每两个16进制的字符）进行异或后即得到校验码。</p>
+</li>
+<li><p>例如：需要异或校验的16进制数据：<strong>01 A0 7C FF 02——&#x3D;20</strong>，最后与BCC校验位进行对比，相同就说明数据传递的正确性和可靠性。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094650978.png" alt="image2024-2-22_11-34-41"></p>
+</li>
+</ol>
+<h3 id="CRC-Cyclic-Redundancy-Check-循环冗余校验"><a href="#CRC-Cyclic-Redundancy-Check-循环冗余校验" class="headerlink" title="CRC(Cyclic Redundancy Check&#x2F;循环冗余校验)"></a>CRC(Cyclic Redundancy Check&#x2F;循环冗余校验)</h3><ol>
+<li>参考文章：<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/CRC.html">https://info.support.huawei.com/info-finder/encyclopedia/zh/CRC.html</a></li>
+<li>CRC校验在线计算工具：<a target="_blank" rel="noopener" href="https://www.lddgo.net/encrypt/crc">https://www.lddgo.net/encrypt/crc</a></li>
+<li>CRC的思想就是先在要发送的K比特长度的数据后面附加一个R比特长度的校验码，然后生成一个新帧发送给接收端。接收端接收到新帧后，根据收到的数据和校验码来验证接收到的数据是否正确。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094717003.png" alt="image2024-2-22_13-58-26"></li>
+<li>算法如下：<ol>
+<li>发送端、接收端在通信前，<strong>约定好除数P</strong>，也就是下面多项式的系数。P应该是R+1位长度；</li>
+<li>发送端首先在原来的K位数据后面加R个0，相当于原来的数据左移了R位；</li>
+<li>然后进行模2除法运算（其实就是异或XOR运算），将加0之后的K+R位的数除以P，循环计算，直到余数的阶数小于R，<strong>这个余数就是附加的校验码（即校验码R）</strong>，如果长度不足R位需要在前面加0补齐；</li>
+<li>发送端将R位校验码附加在原数据后面发送给接收方；</li>
+<li>接收方接收到数据后，将数据以模2除法方式除以除数P。如果没有余数，说明在传输过程中没有出现错误，否则说明有错误。</li>
+<li><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094758817.png" alt="image2024-2-22_13-56-53"></li>
+</ol>
+</li>
+<li>以多项式为CRC-4&#x3D;X^4+X+1为例：<ol>
+<li>此时除数P&#x3D;10011，我们假设源数据K为10110011。</li>
+<li>在发送端将K左移4位，然后除以P。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094835412.png" alt="image2024-2-22_14-7-2"></li>
+<li>计算得到的余数就是<strong>0100</strong>，也就是CRC校验码R。将<strong>0100</strong>附加到原始数据帧10110011后，组成新帧10110011<strong>0100</strong>发送给接收端。</li>
+<li>接收端接收到该帧后，会用该帧去除以上面选定的除数P，验证余数是否为0，如果为0，则表示数据在传输过程中没有出现差错。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094857707.png" alt="image2024-2-22_14-6-41"></li>
+</ol>
+</li>
+</ol>
+<h3 id="LRC-Longitudinal-Redundancy-Check-纵向冗余校验"><a href="#LRC-Longitudinal-Redundancy-Check-纵向冗余校验" class="headerlink" title="LRC(Longitudinal Redundancy Check&#x2F;纵向冗余校验)"></a>LRC(Longitudinal Redundancy Check&#x2F;纵向冗余校验)</h3><ol>
+<li>前言：奇偶校验<ol>
+<li>奇偶校验是检测错误的最古老的方法。用于检查数据传输的完整性。校验方法非常简单，只需要在数据上添加一个额外的位， 这个额外的位称为奇偶校验位。 该位简单地表示原数据中 1 的数量是奇数还是偶数。</li>
+<li>基本算法如下：<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094912402.png" alt="image2024-2-22_14-50-46"></li>
+<li>通常，如果 1 的数量是奇数，则奇偶校验位是 1，如果 1 的数量是偶数，则奇偶校验位是 0。</li>
+<li>虽然奇偶校验足以保护单个字符或字节，但当应用于较大的消息时，其检测能力不足：消息通常跨越数千位，如果仅翻转两位，就无法检测到损坏。消息中出现多位错误的几率随着消息长度呈指数级增加。<ol>
+<li>当一个字符中有 1 个位不正确时（如上面的 Single-bit error），它可以检测错误，但是当字符中有 2 个错误时，它认为没有发生错误。</li>
+<li>奇偶校验会消耗大量开销（通常每 8 个位就添加一个校验位），因此它会减慢传输速度。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>纵向冗余校验是一个逐字节奇偶校验计算，将数据字的所有字节一起<strong>异或</strong>，创建一个字节的结果，也称为 XOR 校验和。</li>
+<li>算法如下：<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102094927585.png" alt="image2024-2-22_14-55-2"></li>
+<li>纵向冗余校验就是对奇偶校验的扩展形式，其只能检测纵向奇数个错误。<br><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250102101431741.png" alt="image2024-2-22_14-56-25"></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -209,7 +354,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/" class="post-title-link" itemprop="url">categories</a>
+          <a href="/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/" class="post-title-link" itemprop="url">三相交流电路</a>
         </h2>
 
         <div class="post-meta-container">
@@ -219,9 +364,24 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-01-02 09:19:14 / 修改时间：01:20:45" itemprop="dateCreated datePublished" datetime="2025-01-02T09:19:14+00:00">2025-01-02</time>
+      <time title="创建时间：2025-01-02 09:19:14" itemprop="dateCreated datePublished" datetime="2025-01-02T09:19:14+00:00">2025-01-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-03 01:40:36" itemprop="dateModified" datetime="2025-01-03T01:40:36+00:00">2025-01-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5/" itemprop="url" rel="index"><span itemprop="name">低压电工</span></a>
+        </span>
     </span>
 
   
@@ -304,82 +464,6 @@
 </ol>
 </li>
 </ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/01/1234/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20241225140413310.png">
-      <meta itemprop="name" content="Gab Liang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | My blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/01/01/1234/" class="post-title-link" itemprop="url">testing</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-01-01 09:19:14" itemprop="dateCreated datePublished" datetime="2025-01-01T09:19:14+00:00">2025-01-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-01-02 01:20:45" itemprop="dateModified" datetime="2025-01-02T01:20:45+00:00">2025-01-02</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="1234"><a href="#1234" class="headerlink" title="1234"></a>1234</h1><p>大苏打撒</p>
 
       
     </div>
