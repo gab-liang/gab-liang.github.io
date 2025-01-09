@@ -68,6 +68,87 @@
       </tags>
   </entry>
   <entry>
+    <title>串口通讯协议</title>
+    <url>/2025/01/09/%E4%B8%B2%E5%8F%A3%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<ol>
+<li><p><strong>并行传输</strong>：一个字符的8位数据同时传输、并排传输</p>
+<p><strong>串行传输</strong>：一个字符的8位数据先后依次传输</p>
+<img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250109150445003.png" alt="image-20250109150437711"  />
+</li>
+<li><p><strong>异步传输</strong>：</p>
+<ul>
+<li><p>通常以<strong>字符</strong>为传输单位，面向字符的传输</p>
+</li>
+<li><p>不要求接收端时钟和发送端时钟同步，因此<strong>需要在每个字符中附加1位起始位和停止位</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250109155256608.png" alt="image-20250109155256559"></p>
+</li>
+<li><p>发送方发出数据后不等接收方发回响应，接着发送下个数据包的通讯方式，为非阻塞模式</p>
+</li>
+<li><p>优点：简单、可靠，适用于面向字符的、低速的异步通信场合</p>
+</li>
+<li><p>缺点：通信开销大，每传输一个字符都要额外附加2～3位，通信效率比较低</p>
+</li>
+<li><p>协议例子：</p>
+<ul>
+<li>物理层（串口通讯）：TTL、RS232、RS485（注：UART和COM是物理接口形式）</li>
+<li>协议层（总线通讯）：CAN</li>
+</ul>
+</li>
+</ul>
+<p><strong>同步传输</strong>：</p>
+<ul>
+<li><p>以<strong>数据帧</strong>为传输单位，面向比特的传输</p>
+</li>
+<li><p>接收时钟与发送时钟严格同步，通常要有同步时钟</p>
+</li>
+<li><p>发送方发出数据后，等接收方发回响应以后才发下一个数据包，为阻塞模式</p>
+</li>
+<li><p>数据帧的第一部分包含一组同步字符，它是一个独特的比特组合，类似于异步传输的起始位，用于通知接收方一个帧已经到达，但它同时还能确保接收方的采样速度和比特的到达速度保持一致，使收发双方进入同步</p>
+</li>
+<li><p>帧的最后一部分是一个帧结束标记，与同步字符一样，它也是一个独特的比特串，类似于异步传输的停止位，用于表示在下一帧开始之前没有别的即将到达的数据了。</p>
+</li>
+<li><p>优点：高效、低出错率、数据完整</p>
+</li>
+<li><p>缺点：需要同步时钟，增加了复杂性和成本；长距离传输可能会出现时钟的衰减</p>
+</li>
+<li><p>协议例子：（总线通讯）SPI、I2C</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250109162334220.png" alt="image-20250109155011678"></p>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250109150829465.png" alt="image-20250109150829202"></p>
+</li>
+<li><p><strong>全双工通信</strong>：同时收发</p>
+<p><strong>半双工通信</strong>：能收发，但不能同时</p>
+<p><strong>单工通信</strong>：一方只能发，另一方只能收</p>
+</li>
+<li><p><strong>物理层</strong>：</p>
+<ul>
+<li>将0和1的<strong>逻辑信号</strong>与声、光、电等<strong>物理信号</strong>进行互相转换</li>
+<li>RS232、RS485</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250109155956115.png" alt="image-20250109155955889"></p>
+<p><strong>数据链路层</strong>：</p>
+<ul>
+<li>将<strong>比特流</strong>与<strong>数据</strong>互相转换（编码）</li>
+<li>UART（异步）、SPI、I2C（同步）</li>
+</ul>
+<p><strong>应用层</strong>：</p>
+<ul>
+<li>将<strong>数据</strong>归纳各种<strong>指令</strong>：查询和写入</li>
+<li>Modbus、Profibus和CC-Link（包含链路层）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/gab-liang/blog-image@master/20250109161209005.png" alt="image-20250109161208645"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>嵌入式</category>
+      </categories>
+      <tags>
+        <tag>串口通讯</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>三相交流电路</title>
     <url>/2025/01/02/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5%E4%BD%9C%E4%B8%9A/</url>
     <content><![CDATA[<h1 id="1-三相交流电路"><a href="#1-三相交流电路" class="headerlink" title="1 三相交流电路"></a>1 三相交流电路</h1><h2 id="1-1-三相电源的连接"><a href="#1-1-三相电源的连接" class="headerlink" title="1.1 三相电源的连接"></a>1.1 三相电源的连接</h2><h3 id="1-1-1-星形连接"><a href="#1-1-1-星形连接" class="headerlink" title="1.1.1 星形连接"></a>1.1.1 星形连接</h3><ol>
